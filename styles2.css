@@ -1,0 +1,41 @@
+/* styles.css */
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Increase cell size */
+    grid-template-rows: repeat(3, 100px); /* Increase cell size */
+    gap: 5px;
+    width: 320px; /* Adjusted width for larger board */
+    margin: 20px auto;
+}
+
+.cell {
+    background-color: lightgray;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 100px; /* Increase cell height */
+}
+
+.cell:hover {
+    background-color: lightblue;
+}
+
+.status {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#reset-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
